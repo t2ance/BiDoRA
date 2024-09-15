@@ -1,6 +1,6 @@
-# BiDoRA: BiDoRA: Bi-level Optimization based Weight Decomposed Low-Rank Adaptation
+# BiDoRA: Bi-level Optimization based Weight Decomposed Low-Rank Adaptation
 
-This folder contains the implementation of BiDoRA ("BiDoRA: BiDoRA: Bi-level Optimization based Weight Decomposed Low-Rank Adaptation") on fine-tuning the RoBERTa model on GLUE benchmark.
+This folder contains the implementation of BiDoRA ("BiDoRA: Bi-level Optimization based Weight Decomposed Low-Rank Adaptation") on fine-tuning the RoBERTa model on the GLUE benchmark.
 
 ## Steps to reproduce our results
 
