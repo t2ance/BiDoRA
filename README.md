@@ -9,21 +9,28 @@ BiDoRA introduces a bi-level optimization (BLO) framework to address the limitat
 
 **DoRA Formulation:**
 The update in DoRA is formulated as:
+
 $$
 \mathbf{W}^{\prime}=\mathbf{m}\frac{\mathbf{W_0}+\mathbf{B}\mathbf{A}}{\|\mathbf{W_0}+\mathbf{B}\mathbf{A}\|_c}
 $$
+
 where $\mathbf{m}$ is the magnitude and $\mathbf{W_0}+\mathbf{B}\mathbf{A}$ represents the direction.
 
 **BiDoRA's Bi-level Optimization:**
 BiDoRA reframes this as a BLO problem:
-1.  **Lower Level:** Optimizes the direction component ($\mathcal{V}$) on a training data split ($\mathcal{D}_{tr}$) while keeping the magnitude ($\mathcal{M}$) fixed.
-    $$
-    \mathcal{V}^*(\mathcal{M})=\arg\min_{\mathcal{V}}\:\mathcal{L}_{tr}(\mathcal{V},\mathcal{M})
-    $$
-2.  **Upper Level:** Optimizes the magnitude component ($\mathcal{M}$) on a separate validation split ($\mathcal{D}_{val}$).
-    $$
-    \min_{\mathcal{M}}\:\mathcal{L}_{val}(\mathcal{V}^*(\mathcal{M}),\mathcal{M})
-    $$
+
+**Lower Level:** Optimizes the direction component ($\mathcal{V}$) on a training data split ($\mathcal{D}_{tr}$) while keeping the magnitude ($\mathcal{M}$) fixed.
+
+$$
+\mathcal{V}^*(\mathcal{M})=\arg\min_{\mathcal{V}}\:\mathcal{L}_{tr}(\mathcal{V},\mathcal{M})
+$$
+
+
+**Upper Level:** Optimizes the magnitude component ($\mathcal{M}$) on a separate validation split ($\mathcal{D}_{val}$).
+
+$$
+\min_{\mathcal{M}}\:\mathcal{L}_{val}(\mathcal{V}^*(\mathcal{M}),\mathcal{M})
+$$
 
 This decoupled optimization allows for a more flexible and robust learning pattern, mitigating overfitting and better aligning with full fine-tuning.
 
