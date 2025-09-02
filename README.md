@@ -108,7 +108,7 @@ This work builds upon several outstanding projects from the community:
 - [Betty: An Automatic Differentiation Library for Multilevel Optimization](https://github.com/leopard-ai/betty)
 
 ### License
-This repository is under the [Apache License 2.0](LICENSE.md).
+This repository is under the Apache License 2.0.
 
 ### Citation
 
