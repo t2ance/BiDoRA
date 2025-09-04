@@ -109,16 +109,3 @@ This work builds upon several outstanding projects from the community:
 
 ### License
 This repository is under the Apache License 2.0.
-
-### Citation
-
-If you find this work useful in your research, please consider citing:
-
-```bibtex
-@article{qin2025bidora,
-  title={BiDoRA: Bi-level Optimization-Based Weight-Decomposed Low-Rank Adaptation},
-  author={Peijia Qin and Ruiyi Zhang and Pengtao Xie},
-  journal={Transactions on Machine Learning Research},
-  year={2025},
-  url={https://openreview.net/forum?id=v2xCm3VYl4}
-}
